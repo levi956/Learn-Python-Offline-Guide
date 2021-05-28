@@ -1,5 +1,5 @@
 #  App: Learn-Python-Offline-Guide created with flutter
-An app that provides a quicj guide to get started on the Python Programming Language. App available on the Playstore. Coming soon to iOS.
+An app that provides a quick guide to get started on the Python Programming Language. App available on the Playstore. Coming soon to iOS.
 
 
 **Privacy Policy**
