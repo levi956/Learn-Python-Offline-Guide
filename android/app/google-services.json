@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1031337997937",
+    "project_id": "python-cheat-app",
+    "storage_bucket": "python-cheat-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031337997937:android:121564e407308be2f50dd0",
+        "android_client_info": {
+          "package_name": "com.levi.python_cheat_sheet_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1031337997937-33e2vupqtffetiogcsbe37ftvvldelj7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-6iJ3eSbGnWCmWG_0e-YKNjrZWsN0JRM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1031337997937-33e2vupqtffetiogcsbe37ftvvldelj7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
