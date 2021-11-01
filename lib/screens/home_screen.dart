@@ -2,8 +2,6 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:provider/provider.dart';
-import 'package:python_cheat_sheet_app/services/ad_state.dart';
 import 'package:python_cheat_sheet_app/widgets/advanced_category.dart';
 import 'package:python_cheat_sheet_app/widgets/basic_categories.dart';
 import 'package:python_cheat_sheet_app/widgets/intermediate_categories.dart';
@@ -28,6 +26,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
   void _createInterstitialAd() {
     InterstitialAd(
+        // ad unit for interstitial (set to test ad unit)
+        // (edit for live add)
         adUnitId: InterstitialAd.testAdUnitId,
         request: request,
         listener: AdListener(
@@ -45,9 +45,6 @@ class _HomeScreenState extends State<HomeScreen> {
             print('InterstitialAd failed to load: $error.');
             // _numInterstitialLoadAttempts += 1;
             _interstitialAd = null;
-            /*if (_numInterstitialLoadAttempts <= maxFailedLoadAttempts) {
-              _createInterstitialAd();
-            }*/
           },
         ))
       ..load();
@@ -59,20 +56,6 @@ class _HomeScreenState extends State<HomeScreen> {
       _createInterstitialAd();
       return;
     }
-    /*  _interstitialAd.fullScreenContentCallback = FullScreenContentCallback(
-      onAdShowedFullScreenContent: (InterstitialAd ad) =>
-          print('ad onAdShowedFullScreenContent.'),
-      onAdDismissedFullScreenContent: (InterstitialAd ad) {
-        print('$ad onAdDismissedFullScreenContent.');
-        ad.dispose();
-        _createInterstitialAd();
-      },
-      onAdFailedToShowFullScreenContent: (InterstitialAd ad, AdError error) {
-        print('$ad onAdFailedToShowFullScreenContent: $error');
-        ad.dispose();
-        _createInterstitialAd();
-      },
-    );*/
     _interstitialAd.show();
     _interstitialAd = null;
   }
@@ -93,6 +76,7 @@ class _HomeScreenState extends State<HomeScreen> {
       size: size,
       request: request,
       adUnitId: Platform.isAndroid
+          // ad unit id for banner ad.
           ? 'ca-app-pub-3940256099942544/6300978111'
           : 'ca-app-pub-3940256099942544/2934735716',
       listener: AdListener(
@@ -122,32 +106,6 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    /*final adState = Provider.of<AdState>(context);
-    adState.initialization.then((status) {
-      setState(() {
-        banner = BannerAd(
-          adUnitId: adState.bannerAdUnitId,
-          size: AdSize.banner,
-          request: AdRequest(),
-          listener: AdListener(
-            onAdLoaded: (Ad ad) {
-              print('$BannerAd loaded.');
-              setState(() {
-                banner = ad as BannerAd;
-              });
-            },
-            onAdFailedToLoad: (Ad ad, LoadAdError error) {
-              print('$BannerAd failedToLoad: $error');
-              ad.dispose();
-            },
-            onAdOpened: (Ad ad) => print('$BannerAd onAdOpened.'),
-            onAdClosed: (Ad ad) => print('$BannerAd onAdClosed.'),
-          ),
-        )..load();
-
-        //banner.load();
-      });
-    });*/
   }
 
   @override
@@ -173,9 +131,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 size: 20,
                 color: Colors.white,
               ),
-              onPressed: () {
-                print('I was pressed');
-              },
+              onPressed: () => Navigator.pushNamed(context, 'Settings_screen'),
             ),
           ),
           backgroundColor: Colors.black,
@@ -198,12 +154,13 @@ class _HomeScreenState extends State<HomeScreen> {
                           height: 15.h,
                           width: 120,
                           child: Image(
-                              //fit: BoxFit.fill,
-                              //height: 200,
-                              //width: 150,
-                              image: AssetImage(
-                            'assets/images/pythonlogo.png',
-                          )),
+                            //fit: BoxFit.fill,
+                            //height: 200,
+                            //width: 150,
+                            image: AssetImage(
+                              'assets/images/pythonlogo.png',
+                            ),
+                          ),
                         ),
                         Container(
                           child: Text(
@@ -258,7 +215,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 Intermediate(),
                 Container(
-                  //height: 22,
                   margin: EdgeInsets.only(left: 10, top: 20, bottom: 20),
                   child: Text(
                     'Professional',

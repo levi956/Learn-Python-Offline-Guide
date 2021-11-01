@@ -19,12 +19,16 @@ class Basics extends StatelessWidget {
           itemBuilder: (BuildContext context, int index) {
             return GestureDetector(
               onTap: () {
-                if (index == 0) Navigator.pushNamed(context, '/Intro_screen');
-                if (index == 1) Navigator.pushNamed(context, '/Var_screen');
+                if (index == 0)
+                  Navigator.pushNamed(context, '/Introduction_screen');
+                if (index == 1)
+                  Navigator.pushNamed(context, '/Variables_screen');
                 if (index == 2)
-                  Navigator.pushNamed(context, '/Arithmetic_screen');
-                if (index == 3) Navigator.pushNamed(context, '/DataT_screen');
-                if (index == 4) Navigator.pushNamed(context, '/Control_screen');
+                  Navigator.pushNamed(context, '/ArithmeticOperators_screen');
+                if (index == 3)
+                  Navigator.pushNamed(context, '/DataTypes_screen');
+                if (index == 4)
+                  Navigator.pushNamed(context, '/ControlFlow_screen');
               },
               child: Container(
                 height: 100,

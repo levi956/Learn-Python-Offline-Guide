@@ -4,7 +4,7 @@ import 'package:flutter_highlight/flutter_highlight.dart';
 import 'package:flutter_highlight/themes/darcula.dart';
 
 // ignore: must_be_immutable
-class VarScreen extends StatelessWidget {
+class Variables extends StatelessWidget {
   final code = '''
 # variable assignment
 a = 10    # assigning int 10 to variable a
@@ -73,12 +73,14 @@ type(int)
                   ),
                 ),
                 Container(
-                  child: Text(okay,
-                      textAlign: TextAlign.left,
-                      style: TextStyle(
-                          fontFamily: 'Poppins',
-                          fontSize: 13,
-                          color: Colors.white)),
+                  child: Text(
+                    okay,
+                    textAlign: TextAlign.left,
+                    style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontSize: 13,
+                        color: Colors.white),
+                  ),
                 ),
                 SizedBox(
                   height: 10,

@@ -109,7 +109,7 @@ Always execute finally code blocks
         backgroundColor: Colors.black,
         appBar: AppBar(
           title: Text(
-            'Lists',
+            'Error Exception',
             style: TextStyle(fontFamily: 'Poppins', color: Colors.white),
           ),
           backgroundColor: Colors.transparent,

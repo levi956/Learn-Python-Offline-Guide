@@ -259,19 +259,23 @@ Felix says Meow!
                 ),
                 Container(
                   margin: EdgeInsets.only(top: 15),
-                  child: Text('Creating a class',
-                      style: TextStyle(
-                          fontFamily: 'Poppins',
-                          fontWeight: FontWeight.bold,
-                          fontSize: 19,
-                          color: Colors.white)),
+                  child: Text(
+                    'Creating a class',
+                    style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.bold,
+                        fontSize: 19,
+                        color: Colors.white),
+                  ),
                 ),
                 Container(
-                  child: Text(oop2,
-                      style: TextStyle(
-                          fontFamily: 'Poppins',
-                          fontSize: 14,
-                          color: Colors.white)),
+                  child: Text(
+                    oop2,
+                    style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontSize: 14,
+                        color: Colors.white),
+                  ),
                 ),
                 Container(
                   child: HighlightView(
@@ -287,19 +291,23 @@ Felix says Meow!
                 ),
                 Container(
                   margin: EdgeInsets.only(top: 15),
-                  child: Text('Attribures and Objects',
-                      style: TextStyle(
-                          fontFamily: 'Poppins',
-                          fontWeight: FontWeight.bold,
-                          fontSize: 19,
-                          color: Colors.white)),
+                  child: Text(
+                    'Attribures and Objects',
+                    style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.bold,
+                        fontSize: 19,
+                        color: Colors.white),
+                  ),
                 ),
                 Container(
-                  child: Text(oop3,
-                      style: TextStyle(
-                          fontFamily: 'Poppins',
-                          fontSize: 14,
-                          color: Colors.white)),
+                  child: Text(
+                    oop3,
+                    style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontSize: 14,
+                        color: Colors.white),
+                  ),
                 ),
                 Container(
                   child: HighlightView(
@@ -315,19 +323,23 @@ Felix says Meow!
                 ),
                 Container(
                   margin: EdgeInsets.only(top: 15),
-                  child: Text('Class Object Attributes',
-                      style: TextStyle(
-                          fontFamily: 'Poppins',
-                          fontWeight: FontWeight.bold,
-                          fontSize: 19,
-                          color: Colors.white)),
+                  child: Text(
+                    'Class Object Attributes',
+                    style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.bold,
+                        fontSize: 19,
+                        color: Colors.white),
+                  ),
                 ),
                 Container(
-                  child: Text(oop4,
-                      style: TextStyle(
-                          fontFamily: 'Poppins',
-                          fontSize: 14,
-                          color: Colors.white)),
+                  child: Text(
+                    oop4,
+                    style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontSize: 14,
+                        color: Colors.white),
+                  ),
                 ),
                 Container(
                   child: HighlightView(
@@ -343,19 +355,23 @@ Felix says Meow!
                 ),
                 Container(
                   margin: EdgeInsets.only(top: 15),
-                  child: Text('Methods',
-                      style: TextStyle(
-                          fontFamily: 'Poppins',
-                          fontWeight: FontWeight.bold,
-                          fontSize: 19,
-                          color: Colors.white)),
+                  child: Text(
+                    'Methods',
+                    style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.bold,
+                        fontSize: 19,
+                        color: Colors.white),
+                  ),
                 ),
                 Container(
-                  child: Text(oop5,
-                      style: TextStyle(
-                          fontFamily: 'Poppins',
-                          fontSize: 14,
-                          color: Colors.white)),
+                  child: Text(
+                    oop5,
+                    style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontSize: 14,
+                        color: Colors.white),
+                  ),
                 ),
                 Container(
                   child: HighlightView(
@@ -371,19 +387,23 @@ Felix says Meow!
                 ),
                 Container(
                   margin: EdgeInsets.only(top: 15),
-                  child: Text('Inheritance',
-                      style: TextStyle(
-                          fontFamily: 'Poppins',
-                          fontWeight: FontWeight.bold,
-                          fontSize: 19,
-                          color: Colors.white)),
+                  child: Text(
+                    'Inheritance',
+                    style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.bold,
+                        fontSize: 19,
+                        color: Colors.white),
+                  ),
                 ),
                 Container(
-                  child: Text(oop6,
-                      style: TextStyle(
-                          fontFamily: 'Poppins',
-                          fontSize: 14,
-                          color: Colors.white)),
+                  child: Text(
+                    oop6,
+                    style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontSize: 14,
+                        color: Colors.white),
+                  ),
                 ),
                 Container(
                   child: HighlightView(
@@ -399,19 +419,23 @@ Felix says Meow!
                 ),
                 Container(
                   margin: EdgeInsets.only(top: 15),
-                  child: Text('Polymorphism',
-                      style: TextStyle(
-                          fontFamily: 'Poppins',
-                          fontWeight: FontWeight.bold,
-                          fontSize: 19,
-                          color: Colors.white)),
+                  child: Text(
+                    'Polymorphism',
+                    style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.bold,
+                        fontSize: 19,
+                        color: Colors.white),
+                  ),
                 ),
                 Container(
-                  child: Text(oop7,
-                      style: TextStyle(
-                          fontFamily: 'Poppins',
-                          fontSize: 14,
-                          color: Colors.white)),
+                  child: Text(
+                    oop7,
+                    style: TextStyle(
+                        fontFamily: 'Poppins',
+                        fontSize: 14,
+                        color: Colors.white),
+                  ),
                 ),
                 Container(
                   child: HighlightView(

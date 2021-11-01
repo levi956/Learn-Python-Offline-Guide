@@ -43,7 +43,7 @@ my_dict['key3'][0]
         backgroundColor: Colors.black,
         appBar: AppBar(
           title: Text(
-            'Lists',
+            'Dictionaries',
             style: TextStyle(fontFamily: 'Poppins', color: Colors.white),
           ),
           backgroundColor: Colors.transparent,

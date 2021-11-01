@@ -105,7 +105,7 @@ Breaking because x==3
         backgroundColor: Colors.black,
         appBar: AppBar(
           title: Text(
-            'Lists',
+            'Loops',
             style: TextStyle(fontFamily: 'Poppins', color: Colors.white),
           ),
           backgroundColor: Colors.transparent,

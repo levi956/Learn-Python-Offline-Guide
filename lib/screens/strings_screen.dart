@@ -53,7 +53,7 @@ sentence2.split()
         backgroundColor: Colors.black,
         appBar: AppBar(
           title: Text(
-            'Lists',
+            'Strings',
             style: TextStyle(fontFamily: 'Poppins', color: Colors.white),
           ),
           backgroundColor: Colors.transparent,

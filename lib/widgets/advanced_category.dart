@@ -19,9 +19,12 @@ class Advanced extends StatelessWidget {
           itemBuilder: (BuildContext context, int index) {
             return GestureDetector(
               onTap: () {
-                if (index == 0) Navigator.pushNamed(context, '/oop_screen');
-                if (index == 1) Navigator.pushNamed(context, '/sort_screen');
-                if (index == 2) Navigator.pushNamed(context, '/error_screen');
+                if (index == 0)
+                  Navigator.pushNamed(context, '/ObjectOriented_screen');
+                if (index == 1)
+                  Navigator.pushNamed(context, '/SortingAlgo_screen');
+                if (index == 2)
+                  Navigator.pushNamed(context, '/ErrorExcept_screen');
               },
               child: Container(
                 height: 100,
