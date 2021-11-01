@@ -76,7 +76,7 @@ class _HomeScreenState extends State<HomeScreen> {
       size: size,
       request: request,
       adUnitId: Platform.isAndroid
-          // ad unit id for banner ad.
+          // ad unit id for banner ad. (note: 111 is test unit id)
           ? 'ca-app-pub-3940256099942544/6300978111'
           : 'ca-app-pub-3940256099942544/2934735716',
       listener: AdListener(
@@ -154,9 +154,6 @@ class _HomeScreenState extends State<HomeScreen> {
                           height: 15.h,
                           width: 120,
                           child: Image(
-                            //fit: BoxFit.fill,
-                            //height: 200,
-                            //width: 150,
                             image: AssetImage(
                               'assets/images/pythonlogo.png',
                             ),
@@ -200,7 +197,10 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 ),
+
+                // basics categories widget
                 Basics(),
+
                 Container(
                   //height: 22,
                   margin: EdgeInsets.only(left: 10, top: 20, bottom: 20),
@@ -213,7 +213,10 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 ),
+
+                // intermediate categories widget
                 Intermediate(),
+
                 Container(
                   margin: EdgeInsets.only(left: 10, top: 20, bottom: 20),
                   child: Text(
@@ -225,7 +228,13 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 ),
+
+                // advanced categories widget
                 Advanced(),
+
+                // adstate initialization
+                // note: updated dependencies cause an error
+                // (ad state code needs professional rewrite)
                 bannerad != null
                     ? Container(
                         color: Colors.green,
